@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "@prisma/client": "^7.10.0",
+    "@prisma/orm-postgres": "^8.0.0-rc.8",
+    "dotenv": "^17.4.2",
+    "pg": "^8.23.0",
+    "prisma": "^8.0.0-rc.10",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "postinstall": "prisma skills sync || exit 0",
+    "contract:emit": "prisma contract emit",
+    "db:seed": "tsx src/seed.ts"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.3.0",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "tsx": "^4.20.3",
+    "typescript": "latest"
+  }
+}
