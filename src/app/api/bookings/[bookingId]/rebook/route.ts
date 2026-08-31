@@ -70,7 +70,7 @@ export async function POST(
     const newBooking = await db.orm.public.Booking.create({
       service: oldBooking.service,
       bookingDate: newBookingDate,
-      status: "Confirmed",
+      status: "CONFIRMED",
       customerId: oldBooking.customerId,
       professionalId: oldBooking.professionalId,
     });
