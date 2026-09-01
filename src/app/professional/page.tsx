@@ -1,1 +1,3 @@
-<div className=""></div>
+export default function ProfessionalPage() {
+  return <div></div>;
+}
